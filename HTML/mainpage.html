@@ -19,8 +19,8 @@
         <a class="navbar-brand col-sm-3 col-md-2 mr-0 mx-4" href="#" >Auto Strike</a>
         <div class="dropdown p-2 mx-4 border">
             <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle mx-2" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="../images/user.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
-                Elif Duru
+                <img src="../images/silhouette.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                Operator
             </a>
 
             <ul class="dropdown-menu dropdown-menu-dark text-small shadow  " aria-labelledby="dropdownUser1">
@@ -147,16 +147,25 @@
 
 
 
+                        <div class="dropdown justify-content-center">
+                            <p class="text-white fs-4 fw-bold ">Select Peers</p>
+
+                            <select class="form-select bg-primary text-white border-2" aria-label="Select_Attack">
+
+                                <option value="1">VM1_to_VM2</option>
+                                <option value="2">VM1_to_VM3</option>
+                                <option value="3">VM1_to_VM4</option>
+                                <option value="4">VM2_to_VM3</option>
+                                <option value="5">VM2_to_VM4</option>
+                                <option value="6">VM3_to_VM4</option>
+                            </select>
+                        </div>
 
 
 
 
 
-                        <button onclick="startLoading()" class="btn btn-danger d-inline-flex align-items-center " type="button">
-                            ATTACK
-
-                        </button>
-
+                        <button onclick="startLoading()" class="btn btn-danger d-inline-flex align-items-center " type="button">ATTACK</button>
 
                         <script>
                             function startLoading() {
