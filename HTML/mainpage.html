@@ -84,30 +84,143 @@
             </div>
             <!-- sol taraftaki navbar tasarımı son-->
 
+            <div class="col-md-9 col-lg-10 pt-3 px-4  col-sm flex-column">
 
-            <main class="col-md-9 col-lg-10 pt-3 px-4  flex-column">
+
+                <div class="col-lg-auto  justify-content-center px-5">
+                    <p class="lead mb-4 fst-normal fw-normal text-white fw-bold fs-1">Actions</p>
 
 
-                <div class="col-lg-6 mx-auto">
-                    <p class="lead mb-4 fst-normal fw-normal text-white">Actions</p>
-                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+
+                    <div class="d-grid gap-5 d-sm-flex justify-content-sm-center mx-5  col-sm">
+                    <!-- Button-0 -->
+
+
+
+
+
                         <div class="dropdown justify-content-center">
-                            <button class="btn btn-primary  dropdown-toggle  " type="button" id="dropdownMenuButton2"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                CHOOSE ATACK
-                            </button>
-                            <ul class="dropdown-menu  dropdown-menu-dark " aria-labelledby="dropdownMenuButton2">
-                                <li><a class="dropdown-item active " href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
-                            </ul>
+                            <p class="text-white fs-4 fw-bold ">Select Scenario</p>
+
+
+                            <select class="form-select bg-primary text-white border-2" aria-label="Select_Scenario">
+
+                                <option value="1">Scenario-1</option>
+                                <option value="2">Scenario-2</option>
+                                <option value="3">Scenario-3</option>
+                            </select>
+
+                        </div>
+
+
+                        <!--OR -->
+
+
+
+
+                            <p class="lead mb-4 fst-normal fw-normal text-white fw-bold fs-3 justify-content-center">OR</p>
+
+
+
+
+
+                        <!-- Button-1 -->
+
+
+                        <div class="dropdown justify-content-center">
+                            <p class="text-white fs-4 fw-bold ">Select Attack</p>
+
+                            <select class="form-select bg-primary text-white border-2" aria-label="Select_Attack">
+
+                                <option value="1">Port Scanning</option>
+                                <option value="2">Attack B</option>
+                                <option value="3">Attack C</option>
+                                <option value="4">Attack D</option>
+                                <option value="5">Attack F</option>
+                                <option value="6">Attack G</option>
+                                <option value="7">Attack H</option>
+                                <option value="8">Attack I</option>
+                                <option value="9">Attack J</option>
+                            </select>
+                        </div>
+
+
+
+
+
+
+
+
+                        <button onclick="startLoading()" class="btn btn-danger d-inline-flex align-items-center " type="button">
+                            ATTACK
+
+                        </button>
+
+
+                        <script>
+                            function startLoading() {
+                                // Make he spinner visible
+                                document.getElementById('loading').style.visibility = 'visible';
+
+                                // Set a timeout to hide the spinner after 3 seconds
+                                setTimeout(function() {
+                                    stopLoading();
+                                }, 3000);
+                            }
+
+                            function stopLoading() {
+                                // Make the spinner invisible
+                                document.getElementById('loading').style.visibility = 'hidden';
+                            }
+                        </script>
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+                    <div class="row">
+
+
+                        <div class="col text-white m-5 card" >
+                            <div class=" ">
+                                <p class="text-black ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolores doloribus, eum
+                                    fugiat ipsum quae quaerat sunt temporibus voluptatibus. Ad aliquid architecto
+                                    cupiditate dolor eum, itaque nobis rerum tenetur? Aperiam doloribus error eveniet
+                                    expedita fuga illo, iste laboriosam maxime minima nesciunt nihil nisi pariatur
+                                    quidem saepe suscipit veritatis vitae voluptate voluptates? Aliquid asperiores,
+                                    beatae, cupiditate dignissimos exercitationem illo laborum magni, modi nobis quis
+                                    quos similique vero voluptas? Amet beatae culpa cum dicta distinctio doloremque
+                                    eaque earum ipsa ipsam laudantium magni maxime molestias nam odit perspiciatis qui
+                                    quia repellat, sapiente sit tenetur totam ullam vel veritatis? Ab corporis nihil
+                                    porro quia!</p>
+
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="col text-white m-5 px-5 card ">
+                            <div id="loading" class="spinner-border text-primary load_icon m-5" role="status">
+                                <span  class="visually-hidden">Loading...</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+
+
+
+            </div>
+
+
+
+
 
                 <!--
                 <div class="container-fluid pb-3 p-3">
@@ -122,7 +235,7 @@
                 </div>
                 -->
 
-            </main>
+            </div>
 
 
         </div>
@@ -135,7 +248,7 @@
             </ul>
             <p class="text-center text-white">© 2022 Company, Inc</p>
         </footer>
-    </div>
+
 
 
 </body>
